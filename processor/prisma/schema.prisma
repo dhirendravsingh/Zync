@@ -58,6 +58,7 @@ model Actions {
   name String
   zapId String
   AvailableactionId String
+  sortingOrder Int @default(0)
 
   type AvailableAction @relation(fields : [AvailableactionId], references: [id])
   zap Zap @relation(fields : [zapId], references: [id])
