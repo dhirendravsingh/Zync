@@ -1,0 +1,17 @@
+{
+  "name": "processor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -b && nodemon dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.11.1",
+    "kafkajs": "^2.2.4",
+    "prisma": "^6.11.1"
+  }
+}
