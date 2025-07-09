@@ -6,7 +6,7 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
+  output   = "../dist/generated/prisma"
 }
 
 datasource db {
@@ -20,15 +20,18 @@ model User {
   name String
   email String
   password String
+  zap Zap[]
 }
 
 
 model Zap {
   id String @id @default(uuid())
   // triggerId String
+  userId Int
   trigger Trigger?
   action Actions[]
   zaprun Zaprun[]
+  user User @relation(fields: [userId], references: [id])
 }
 
 model Trigger {
