@@ -1,6 +1,6 @@
 # ⚡ Zync – Zap + Sync
 
-**Zync** is an open-source automation platform inspired by Zapier that connects webhooks, triggers, and actions using an event-driven architecture. Users can create workflows (zaps) where a trigger (like a webhook hit) results in one or more automated actions (like API calls).
+**Zync** is an open-source automation platform that connects webhooks, triggers, and actions using an event-driven architecture. Users can create workflows (zaps) where a trigger (like a webhook hit) results in one or more automated actions (like API calls).
 
 ---
 
