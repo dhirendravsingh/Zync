@@ -28,7 +28,15 @@
 
 ## 📁 Folder Structure
 
-<pre> zync/ ├── frontend/ → Next.js app for user signup, zap creation, and dashboard ├── primary-backend/ → API server for handling zaps, triggers, actions, and auth ├── webhook/ → Webhook receiver that saves trigger events into DB using transactional outbox ├── processor/ → Kafka outbox processor that reads DB events and publishes to Kafka ├── worker/ → Kafka consumer that picks events and performs the corresponding actions └── README.md → You're here. </pre>
+/zync
+│
+├── frontend/          → Next.js app for user signup, zap creation, and dashboard
+├── primary-backend/   → API server for handling zaps, triggers, actions, and auth
+├── webhook/           → Webhook receiver that saves trigger events into DB using transactional outbox
+├── processor/         → Kafka outbox processor that reads DB events and publishes to Kafka
+├── worker/            → Kafka consumer that picks events and performs the corresponding actions
+└── README.md          → You're here.
+
 
 
 ---
