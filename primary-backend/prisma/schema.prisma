@@ -26,7 +26,8 @@ model User {
 
 model Zap {
   id String @id @default(uuid())
-  // triggerId String
+  //doubt
+  //triggerId String
   userId Int
   trigger Trigger?
   action Actions[]

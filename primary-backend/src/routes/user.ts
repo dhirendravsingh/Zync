@@ -11,7 +11,7 @@ router.post("/signup", async (req,res)=>{
     const parsedInput = signupSchema.safeParse(body)
 
     if(!parsedInput.success){
-        return res.json(403).json({
+        return res.json(404).json({
             message : "Incorrect inputs"
         })
     }
@@ -44,7 +44,7 @@ router.post("/signin", async (req,res)=>{
     const parsedInput = signinSchema.safeParse(body)
 
     if(!parsedInput.success){
-        return res.status(403).json({
+        return res.status(404).json({
             message : "Incorrect inputs"
         })
     }
@@ -56,7 +56,7 @@ router.post("/signin", async (req,res)=>{
         },
     })
 
-    if(!user) return res.status(403).json({
+    if(!user) return res.status(401).json({
         message : "Wrong credentials"
     })
 
