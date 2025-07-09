@@ -28,6 +28,7 @@
 
 ## 📁 Folder Structure
 
+```
 /zync
 │
 ├── frontend/          → Next.js app for user signup, zap creation, and dashboard
@@ -36,7 +37,7 @@
 ├── processor/         → Kafka outbox processor that reads DB events and publishes to Kafka
 ├── worker/            → Kafka consumer that picks events and performs the corresponding actions
 └── README.md          → You're here.
-
+```
 
 
 ---
@@ -82,6 +83,25 @@ node index.js
 
 cd frontend
 npm run dev
+```
 
+## 🛠️ Future Improvements
+---
 
-<pre lang="markdown"> ## 🛠️ Future Improvements - Action types (email, DB, integrations) - Zap execution logs - Retry mechanism / DLQ - Drag-and-drop UI for zap builder --- ## 📜 License MIT – feel free to use and modify with credit. --- > Built with ⚡ by Dhirendra Vikram Singh </pre>
+- Action types (email, DB, integrations)
+
+- Zap execution logs
+
+- Retry mechanism / DLQ
+
+- Drag-and-drop UI for zap builder
+
+## 📜 License
+---
+MIT – feel free to use and modify with credit.
+
+## Built with ⚡ by Dhirendra Vikram Singh
+
+---
+
+Let me know if you'd like a separate `CONTRIBUTING.md`, `.env.example`, or Docker setup added next!
