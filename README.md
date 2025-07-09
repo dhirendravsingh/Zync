@@ -28,14 +28,7 @@
 
 ## 📁 Folder Structure
 
-/zync
-│
-├── frontend/ → Next.js app for user signup, zap creation, and dashboard
-├── primary-backend/ → API server for handling zaps, triggers, actions, and auth
-├── webhook/ → Webhook receiver that saves trigger events into DB using transactional outbox
-├── processor/ → Kafka outbox processor that reads DB events and publishes to Kafka
-├── worker/ → Kafka consumer that picks events and performs the corresponding actions
-└── README.md → You're here.
+<pre> zync/ ├── frontend/ → Next.js app for user signup, zap creation, and dashboard ├── primary-backend/ → API server for handling zaps, triggers, actions, and auth ├── webhook/ → Webhook receiver that saves trigger events into DB using transactional outbox ├── processor/ → Kafka outbox processor that reads DB events and publishes to Kafka ├── worker/ → Kafka consumer that picks events and performs the corresponding actions └── README.md → You're here. </pre>
 
 
 ---
@@ -81,3 +74,6 @@ node index.js
 
 cd frontend
 npm run dev
+
+
+<pre lang="markdown"> ## 🛠️ Future Improvements - Action types (email, DB, integrations) - Zap execution logs - Retry mechanism / DLQ - Drag-and-drop UI for zap builder --- ## 📜 License MIT – feel free to use and modify with credit. --- > Built with ⚡ by Dhirendra Vikram Singh </pre>
