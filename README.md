@@ -85,8 +85,8 @@ cd frontend
 npm run dev
 ```
 
-## 🛠️ Future Improvements
 ---
+## 🛠️ Future Improvements
 
 - Action types (email, DB, integrations)
 
@@ -96,12 +96,11 @@ npm run dev
 
 - Drag-and-drop UI for zap builder
 
-## 📜 License
 ---
+## 📜 License
 MIT – feel free to use and modify with credit.
 
-## Built with ⚡ by Dhirendra Vikram Singh
-
 ---
+## Built with ⚡ by Dhirendra Vikram Singh
 
 Let me know if you'd like a separate `CONTRIBUTING.md`, `.env.example`, or Docker setup added next!
